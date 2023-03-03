@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the word</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <h1>GUESS THE WORD</h1>
+    </div>
+    <span>Score : <span id="score">0</span></span>
+    <div id="main">
+        <img id="image1" src="https://media.istockphoto.com/id/1328240940/video/game-start-text-on-a-wall-and-illuminated-with-neon-lights.jpg?s=640x640&k=20&c=5wMWaNyfwxOhPcGYQUdspECJt5aMLgNX06VXedWOdDc=">
+        <i  id="plus" class="fa fa-plus" style="font-size:40px;color:aliceblue"></i>
+        <img id="image2" src="https://media.istockphoto.com/id/1328240940/video/game-start-text-on-a-wall-and-illuminated-with-neon-lights.jpg?s=640x640&k=20&c=5wMWaNyfwxOhPcGYQUdspECJt5aMLgNX06VXedWOdDc=">
+    </div>
+
+    <label for="fname">Enter Guess</label>
+    <input type="text" id="guess" name="guess" placeholder="Enter Guess, no spaces please..">
+    <button style="background-color:gold" onclick="check_answer()">Check Answer</button>
+    <button style="background-color:gold" onclick="dis()">Next</button>
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
