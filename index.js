@@ -57,8 +57,7 @@ let asa = random(8,8)
 
 
 function dis(){
-  document.getElementById("interactions").style.display = "block";
-  document.getElementById("start").style.display = "none";
+
   if (q >= images.length -1){
     document.getElementById("main").style.display="none"
     document.getElementById("final").style.display="block"
@@ -71,6 +70,7 @@ function dis(){
     document.getElementById("image1").src = images[unique][0] 
     document.getElementById("image2").src = images[unique][1] 
     document.getElementById("guess").value = ""
+    document.getElementById("output").innerHTML = " "
     
     q++;
 
@@ -82,13 +82,13 @@ function dis(){
 
 function check_answer(){
   if (unique == 1){
-    answer = "HONEYMOON"
+    answer = "HONEYMOON";
     if(document.getElementById("guess").value.toUpperCase() == answer){
       document.getElementById("output").style.color = "green";
       document.getElementById("output").innerHTML = "CORRECT";
       score++;
       document.getElementById("score").innerHTML = score
-      dis()
+      
     }
     else{
       document.getElementById("output").style.color = "red"
@@ -105,7 +105,7 @@ function check_answer(){
       document.getElementById("output").innerHTML = "CORRECT";
       score++;
       document.getElementById("score").innerHTML = score
-      dis()
+      
     }
     else{
       document.getElementById("output").style.color = "red"
@@ -122,7 +122,7 @@ function check_answer(){
       document.getElementById("output").innerHTML = "CORRECT";
       score++;
       document.getElementById("score").innerHTML = score
-      dis()
+      
     }
     else{
       document.getElementById("output").style.color = "red"
@@ -139,7 +139,7 @@ function check_answer(){
       document.getElementById("output").innerHTML = "CORRECT";
       score++;
       document.getElementById("score").innerHTML = score
-      dis()
+      
     }
     else{
       document.getElementById("output").style.color = "red"
@@ -156,7 +156,7 @@ function check_answer(){
       document.getElementById("output").innerHTML = "CORRECT";
       score++;
       document.getElementById("score").innerHTML = score
-      dis()
+      
     }
     else{
       document.getElementById("output").style.color = "red"
@@ -173,7 +173,7 @@ function check_answer(){
       document.getElementById("output").innerHTML = "CORRECT";
       score++;
       document.getElementById("score").innerHTML = score
-      dis()
+      
     }
     else{
       document.getElementById("output").style.color = "red"
@@ -189,7 +189,7 @@ function check_answer(){
       document.getElementById("output").innerHTML = "CORRECT";
       score++;
       document.getElementById("score").innerHTML = score
-      dis()
+      
     }
     else{
       document.getElementById("output").style.color = "red"
@@ -205,7 +205,7 @@ function check_answer(){
       document.getElementById("output").innerHTML = "CORRECT";
       score++;
       document.getElementById("score").innerHTML = score
-      dis()
+      
     }
     else{
       document.getElementById("output").style.color = "red"
@@ -223,3 +223,10 @@ function check_answer(){
     console.log(random(9,9)[1])
 }
  */
+
+function dis2(){
+  document.getElementById("interactions").style.display = "block";
+  document.getElementById("start").style.display = "none";
+
+  dis()
+}
