@@ -11,21 +11,33 @@
 
 </head>
 <body>
+   <div id="main">
     <div id="header">
         <h1>GUESS THE WORD</h1>
     </div>
-    <span>Score : <span id="score">0</span></span>
+    <span>Score : <span id="score">0</span> / <span id="total"> </span></span>
     <div id="main">
         <img id="image1" src="https://media.istockphoto.com/id/1328240940/video/game-start-text-on-a-wall-and-illuminated-with-neon-lights.jpg?s=640x640&k=20&c=5wMWaNyfwxOhPcGYQUdspECJt5aMLgNX06VXedWOdDc=">
         <i  id="plus" class="fa fa-plus" style="font-size:40px;color:aliceblue"></i>
         <img id="image2" src="https://media.istockphoto.com/id/1328240940/video/game-start-text-on-a-wall-and-illuminated-with-neon-lights.jpg?s=640x640&k=20&c=5wMWaNyfwxOhPcGYQUdspECJt5aMLgNX06VXedWOdDc=">
     </div>
-
-    <label for="fname">Enter Guess</label>
+<h5 id="output"></h5>
+    <div id="interactions"> 
+        
     <input type="text" id="guess" name="guess" placeholder="Enter Guess, no spaces please..">
-    <button style="background-color:gold" onclick="check_answer()">Check Answer</button>
+    <button style="background-color:skyblue" onclick="check_answer()">Check Answer</button>
     <button style="background-color:gold" onclick="dis()">Next</button>
+    </div>
+    
+    <button style="background-color:gold" onclick="dis()" id="start">Start game</button>
 
+   </div>    
+
+   <div id="final">
+    <a href="index.html">Play Again</a>
+    <h1>Your Score is <span id="score1">0</span> of  <span id="total1">0</span></h1>
+
+   </div>
 
 
 
